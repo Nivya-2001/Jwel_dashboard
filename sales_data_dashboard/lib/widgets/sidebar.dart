@@ -8,8 +8,8 @@ class Sidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 260.dp,
-      color: Colors.white,
+      width: 20.w,
+      color: const Color(0xFFEFF3F6),
       child: Column(
         children: [
           SizedBox(

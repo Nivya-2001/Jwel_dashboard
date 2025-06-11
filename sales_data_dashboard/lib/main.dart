@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sales_data_dashboard/Utils/app_sizer.dart';
 import 'theme.dart';
 import 'widgets/sidebar.dart';
 import 'widgets/dashboard_content.dart';
@@ -16,11 +17,17 @@ class InvoiceDashboardApp extends StatelessWidget {
       title: 'Invoice Dashboard',
       debugShowCheckedModeBanner: false,
       theme: appTheme,
-      home: const Scaffold(
+      home: Scaffold(
+        backgroundColor: const Color(0xFFEFF3F6),
         body: Row(
           children: [
-            Sidebar(),
-            Expanded(child: DashboardContent()),
+            const Sidebar(),
+            SizedBox(
+              width: 8.dp,
+            ),
+            const Expanded(
+              child: DashboardContent(),
+            ),
           ],
         ),
       ),
